@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+.header_1 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gnavi {
+    display: flex;
+}
+
+.gnavi li {
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.gnavi li + li {
+    border-left: 1px solid #333;
+}
+
+@media screen and (max-width: 767px) {
+    .header_1 {
+        display: block;
+    }
+
+    .title {
+        padding: 0;
+    }
+    .gnavi {
+        display: block;
+    }
+
+    .gnavi li {
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    .gnavi li + li {
+        border-left: none;
+    }
+}

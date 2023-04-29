@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+p {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.box div {
+    width: 31.25%;
+    height: 300px;
+    background: blue;
+    margin-bottom: 10px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.wrap div {
+    width: 31.25%;
+    height: 300px;
+    background: red;
+    margin-bottom: 10px;
+}
