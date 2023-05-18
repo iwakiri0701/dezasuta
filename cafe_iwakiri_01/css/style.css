@@ -3,6 +3,9 @@
 /* cssリセット */
 
 /*利用するタグによってこちらの内容は増やす*/
+html {
+    scroll-behavior: smooth;
+}
 
 html,
 body,
@@ -40,7 +43,6 @@ a:hover {
 
 ul {
     /*左の「・」を消す*/
-    display: flex;
     list-style: none;
 }
 
@@ -112,14 +114,14 @@ section h2 {
     font-size: 82px;
     letter-spacing: 0.1em;
     line-height: 1.17;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .lead_3 {
     font-size: 23px;
     letter-spacing: 0.1em;
     line-height: 1.65;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 /* about us */
@@ -128,38 +130,43 @@ section h2 {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
+    padding-top: 50px;
 }
 
-.about img {
+.about_img {
+    width: 50%;
+}
+
+.about_img img {
     border-bottom-right-radius: 82px;
     width: 100%;
-    margin-top: 60px;
 }
 
-.about li img {
-    margin-top: 120px;
-}
-
-.about li img {
+.about_desc h2 {
     width: 272px;
 }
 
-.about ul {
+.about_desc {
     display: block;
-    margin-left: 90px;
+    width: 43%;
+    margin-left: 80px;
+    padding-top: 55px;
 }
 
-h3 {
+.about_copy {
     font-size: 44px;
     line-height: 1.38;
-    margin-top: 60px;
-    font-weight: lighter;
+    margin-top: 40px;
+    font-weight: 400;
 }
 
-.about p {
+.about_text {
     font-size: 16px;
     line-height: 1.625;
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: justify;
 }
 
 /* menu */
@@ -171,13 +178,17 @@ h3 {
     padding-left: 10px;
 }
 
+.menu h2 {
+    margin: 90px auto 45px;
+    margin-bottom: 40px;
+}
+
 .menu h2 img {
     width: 152px;
-    margin-top: 100px;
-    margin-bottom: 45px;
 }
 
 .menu ul {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -189,11 +200,11 @@ h3 {
     border-top-right-radius: 42px;
 }
 
-h4 {
+.menu h3 {
     font-size: 38px;
     color: #d30202;
     font-weight: lighter;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: -12px;
     margin-bottom: 0;
 }
@@ -201,17 +212,13 @@ h4 {
 .menu p {
     font-size: 17px;
     line-height: 1.47;
-    margin-top: 20px;
+    margin-top: 15px;
+    text-align: justify;
 }
 
 /* ギャラリー */
 .gallery {
     margin: 0 auto;
-}
-
-.gallery ul li {
-    margin: 0 auto;
-    width: 100%;
 }
 
 .gallery h2 {
@@ -223,6 +230,10 @@ h4 {
     width: 245px;
 }
 
+.gallery_slider {
+    display: flex;
+}
+
 /* イベント */
 
 .event {
@@ -232,19 +243,22 @@ h4 {
     padding-left: 10px;
 }
 
+.event h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
 .event h2 img {
     width: 174px;
-    margin-top: 70px;
-    margin-bottom: 40px;
 }
 
 .event ul {
     border: 3.6843px solid #4f260b;
-    padding: 35px 160px;
+    padding: 28px 155px;
     background-color: #fff;
 }
 
-.event p {
+.event li {
     line-height: 1.95;
     font-size: 23px;
     font-weight: 100;
@@ -255,24 +269,18 @@ h4 {
 }
 
 /* アクセス */
-.access h2 img {
-    width: 214px;
+.access h2 {
     margin-top: 75px;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
-.map {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 30%;
-    position: relative;
+.access h2 img {
+    width: 214px;
 }
+
 iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: 470px;
 }
 
 /* footer */
@@ -282,20 +290,19 @@ footer {
 .footer_box {
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 70px;
     display: flex;
 }
 
 .footer_box P {
     color: black;
     font-size: 20px;
-    margin-top: 5px;
     margin-left: 65px;
     line-height: 1.95;
 }
 
 .footer_logo {
-    width: 220px;
+    width: 227px;
 }
 
 .footer_copy {
