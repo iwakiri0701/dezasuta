@@ -10,9 +10,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
 </head>
 
 <body>
@@ -115,21 +118,20 @@
             <section id="gallery" class="gallery">
                 <h2><img src="images/gallery@2x.png" alt="gallary"></h2>
                 <div class="gallery_slider">
-                    <div class="gallery_img"><img src="images/pc_gallary_01-100.jpg" alt="1"></div>
-                    <div><img src="images/pc_gallary_05-100.jpg" alt="5"></div>
-                    <div><img src="images/pc_gallary_04-100.jpg" alt="4"></div>
-                    <div><img src="images/pc_gallary_03-100.jpg" alt="3"></div>
-                    <div><img src="images/pc_gallary_02-100.jpg" alt="2"></div>
-                    <div><img src="images/pc_gallary_01-100.jpg" alt="1"></div>
+                    <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image-1" data-title="ギャラリー１"><img
+                                src="images/pc_gallary_01-100.jpg" alt="1"></a></div>
+                    <div><a href="images/pc_gallary_05-100.jpg" data-lightbox="image-1" data-title="ギャラリー５"><img
+                                src="images/pc_gallary_05-100.jpg" alt="5"></a></div>
+                    <div><a href="images/pc_gallary_04-100.jpg" data-lightbox="image-1" data-title="ギャラリー4"><img
+                                src="images/pc_gallary_04-100.jpg" alt="4"></a></div>
+                    <div><a href="images/pc_gallary_03-100.jpg" data-lightbox="image-1" data-title="ギャラリー3"><img
+                                src="images/pc_gallary_03-100.jpg" alt="3"></a></div>
+                    <div><a href="images/pc_gallary_02-100.jpg" data-lightbox="image-1" data-title="ギャラリー2"><img
+                                src="images/pc_gallary_02-100.jpg" alt="2"></a></div>
+                    <div><a href="images/pc_gallary_01-100.jpg" data-lightbox="image-1" data-title="ギャラリー1"><img
+                                src="images/pc_gallary_01-100.jpg" alt="1"></a></div>
                 </div>
-                <div class="boutton"></div>
-                <div class="sp_gallery_slider">
-                    <div><img src="images/pc_gallary_05-100.jpg" alt="5"></div>
-                    <div><img src="images/pc_gallary_04-100.jpg" alt="4"></div>
-                    <div><img src="images/pc_gallary_03-100.jpg" alt="3"></div>
-                    <div><img src="images/pc_gallary_02-100.jpg" alt="2"></div>
-                    <div><img src="images/pc_gallary_01-100.jpg" alt="1"></div>
-                </div>
+
             </section>
 
             <section id="event" class="event">
@@ -182,6 +184,7 @@
         </div>
     </footer>
 
+
     <script>
         $(function () {
             $('.sp_btn, .sp_nav li').on('click', function () {
@@ -201,14 +204,24 @@
                 infinite: true,
                 slidesToShow: 5,
                 slidesToScroll: 5,
+                responsive: [
+                    {
+                        breakpoint: 768, // 767px以下のサイズに適用
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
             });
-
-            $('.sp_gallery_slider').slick();
         });
+
+
+
     </script>
 
 
-
+    <script src="js/lightbox.js"></script>
 
 </body>
 
