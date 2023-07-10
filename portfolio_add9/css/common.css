@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    font-family: "garamond-premier-pro-caption", serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-feature-settings: "palt";
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #a4a88d;
+
+    font-family: "fot-cezanne-pron", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここから */
+
+/* ここからメニューバー */
+.header_wrap {
+    max-width: 20%;
+}
+
+.header_logo {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.header_logo img {
+    width: 100%;
+}
+
+.pc_nav {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 100px;
+}
+
+.pc_nav li {
+    font-size: 12px;
+    padding-bottom: 60px;
+}
+
+.pc_nav li img {
+    width: 30%;
+}
+
+/* 五線譜 */
+.hr {
+    height: 1px;
+    background-color: #a4a88d;
+    border: none;
+}
+
+/* footer */
+
+.footer_content {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #e8e6d7;
+}
+
+.footer_img {
+    padding: 10px;
+}
+
+.footer_content img {
+    width: 3%;
+}
+
+.footer_text p {
+    font-size: 12px;
+    line-height: 1.68;
+}

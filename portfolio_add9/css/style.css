@@ -1,0 +1,155 @@
+.sd_appear {
+    display: flex;
+}
+
+/* top_mv */
+.top_mv img {
+    width: 100%;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.scroll img {
+    width: 15px;
+    padding-right: 10px;
+}
+
+.scroll p {
+    font-size: 12px;
+}
+
+/* hp_desc */
+.hp_desc {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    padding: 150px 20px 150px 65px;
+}
+
+.hp_desc img {
+    width: 25%;
+}
+
+.hp_desc_text {
+    padding: 0 70px;
+}
+
+.hp_desc_text p {
+    padding: 10px 0;
+    line-height: 1.68;
+}
+
+/* about */
+.about_logo {
+    position: absolute;
+    padding-left: 53%;
+}
+
+.about_logo img {
+    width: 30%;
+}
+
+.about_wrap {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    padding: 30px 0 360px 0;
+}
+
+.about_img {
+    width: 50%;
+}
+
+.about_text {
+    padding: 0 50px;
+}
+
+.about_text p {
+    line-height: 1.68;
+}
+
+/* skill */
+.skill_logo {
+    position: absolute;
+    top: 2718px;
+    text-align: center;
+}
+
+.skill_logo img {
+    width: 30%;
+}
+
+.skill_content {
+    padding: 95px;
+}
+
+.skill_box {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.skill_box img {
+    width: 50%;
+    padding: 20px 0;
+}
+
+.skill_text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.skill_text p {
+    line-height: 1.68;
+}
+
+/* works */
+.works_content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 90px 10px 50px 10px;
+}
+
+.works img {
+    width: 31.8%;
+    padding: 10px;
+}
+
+.works p {
+    text-align: center;
+    padding-bottom: 220px;
+}
+
+/* contact */
+.contact_text {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.contact p {
+    line-height: 1.68;
+}
+
+.contact_buttan {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 250px;
+}
+
+.contact_btn {
+    color: #c4a672;
+    border: 1px solid #c4a672;
+    padding: 10px 40px;
+    background-color: #fffff5;
+    border-radius: 5px;
+}
