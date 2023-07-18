@@ -7,29 +7,37 @@ html {
     scroll-behavior: smooth;
 }
 
-nav {
-    font-family: "garamond-premier-pro-caption", serif;
-}
-
 html,
 body,
-h1,
-h2,
-h3,
 p,
 dl,
 dt,
 dd,
 ul,
-li {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-feature-settings: "palt";
+li,
+h4,
+footer {
+    font-family: "fot-cezanne-pron", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #a4a88d;
+}
 
-    font-family: "fot-cezanne-pron", sans-serif;
+a,
+h1,
+h2,
+h3,
+footer {
+    font-family: "garamond-premier-pro-caption", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffeb;
+    background-image: url(../images/haikei@2x.png);
+    margin: 0;
 }
 
 a {
@@ -62,6 +70,13 @@ img {
     max-width: 20%;
 }
 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
 .header_logo {
     padding-top: 30px;
     padding-left: 40px;
@@ -69,7 +84,13 @@ img {
 }
 
 .header_logo img {
-    width: 100%;
+    width: 116px;
+}
+
+nav {
+    position: fixed;
+    top: 115px;
+    left: 0;
 }
 
 .pc_nav {
@@ -78,25 +99,38 @@ img {
     padding-right: 100px;
 }
 
+.header_logo img {
+    width: 116px;
+}
+
 .pc_nav li {
     font-size: 12px;
     padding-bottom: 60px;
 }
 
 .pc_nav li img {
-    width: 30%;
+    width: 20px;
 }
 
 /* 五線譜 */
-.hr {
+
+.score {
+    position: relative;
+    top: 125px;
+    z-index: 1;
+}
+
+.score span {
+    display: block;
     height: 1px;
     background-color: #a4a88d;
-    border: none;
+    margin-top: 10px;
 }
 
 /* footer */
 
 .footer_content {
+    background-image: url(../images/footer_bg@2x-100.jpg);
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
@@ -104,7 +138,7 @@ img {
 }
 
 .footer_img {
-    padding: 10px;
+    padding: 20px 0 10px 0;
 }
 
 .footer_content img {
@@ -114,4 +148,14 @@ img {
 .footer_text p {
     font-size: 12px;
     line-height: 1.68;
+}
+
+.page_top {
+    position: fixed;
+    bottom: 200px;
+    right: 80px;
+}
+
+.page_top img {
+    width: 70px;
 }

@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.contact2_logo {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    max-width: 142px;
+}
+
+.form_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 340px;
+    text-align: center;
+    position: relative;
+}
+
+.form_wrap p {
+    line-height: 1.78;
+    text-align: left;
+    padding-left: 332px;
+}
+
+.form_wrap p span {
+    margin-left: 16px;
+}
+
+.contact_img {
+    width: 10px;
+    top: 232px;
+    left: 333px;
+    width: 10px;
+    position: absolute;
+}
+
+.form_text {
+    margin: 35px;
+}
+
+.contact_text {
+    text-align: left;
+    margin-left: 65px;
+}
+
+.contact_text2 {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.contact_bg {
+    margin: 20px 0;
+}
+
+.contact_text img {
+    width: 10px;
+    margin: 11px 2px 11px 0;
+}
+
+.contact_btn {
+    color: #c4a672;
+    border: 1px solid #c4a672;
+    padding: 10px 40px;
+    background-color: #fffff5;
+    border-radius: 5px;
+}
+
+.form_text p {
+    line-height: 1.78;
+    margin-top: -25px;
+    margin-bottom: 185px;
+    text-align: left;
+    margin-left: -248px;
+}

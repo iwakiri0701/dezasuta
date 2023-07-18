@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+/* contact */
+.contact3_logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    max-width: 142px;
+}
+
+.thanks_text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.thanks_text p {
+    line-height: 1.78;
+    text-align: left;
+    margin-left: 310px;
+    margin-top: 50px;
+}
+
+.thanks_text img {
+    width: 500px;
+}
+
+.thanks_text p span {
+    padding: 16px;
+}
+
+.topback_btn {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.topback_btn a {
+    color: #fffff5;
+    border: 1px solid #c4a672;
+    padding: 10px 40px;
+    background-color: #c4a672;
+    border-radius: 5px;
+}

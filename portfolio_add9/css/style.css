@@ -1,5 +1,17 @@
+@charset "utf-8";
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
 .sd_appear {
-    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
 }
 
 /* top_mv */
@@ -11,6 +23,7 @@
     display: flex;
     justify-content: center;
     padding: 30px;
+    padding-top: 50%;
 }
 
 .scroll img {
@@ -27,11 +40,11 @@
     max-width: 1000px;
     display: flex;
     margin: 0 auto;
-    padding: 150px 20px 150px 65px;
+    padding: 100px 20px 80px 65px;
 }
 
 .hp_desc img {
-    width: 25%;
+    width: 116px;
 }
 
 .hp_desc_text {
@@ -44,28 +57,29 @@
 }
 
 /* about */
+
 .about_logo {
     position: absolute;
-    padding-left: 53%;
-}
-
-.about_logo img {
+    top: -29px;
+    left: 53%;
     width: 30%;
+    max-width: 125px;
 }
 
 .about_wrap {
     max-width: 1000px;
     display: flex;
     margin: 0 auto;
-    padding: 30px 0 360px 0;
+    padding: 30px 0 200px 0;
 }
 
 .about_img {
     width: 50%;
+    z-index: 1;
 }
 
 .about_text {
-    padding: 0 50px;
+    padding: 175px 75px 0;
 }
 
 .about_text p {
@@ -75,69 +89,143 @@
 /* skill */
 .skill_logo {
     position: absolute;
-    top: 2718px;
-    text-align: center;
-}
-
-.skill_logo img {
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%);
     width: 30%;
+    max-width: 114px;
 }
 
 .skill_content {
-    padding: 95px;
+    padding: 100px;
 }
 
 .skill_box {
     max-width: 1000px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.skill_box ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill_box ul li {
+    display: inline;
 }
 
 .skill_box img {
-    width: 50%;
+    width: 150px;
     padding: 20px 0;
 }
 
-.skill_text {
-    max-width: 1000px;
-    margin: 0 auto;
+.skill_box p {
     text-align: center;
-    padding: 100px 0;
-}
-
-.skill_text p {
+    padding: 50px 0;
     line-height: 1.68;
 }
 
 /* works */
+.works_logo {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    max-width: 114px;
+}
+
+.works_item {
+    padding: 170px 20px 50px 20px;
+}
+
+/* works横並び */
 .works_content {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 90px 10px 50px 10px;
-}
-
-.works img {
-    width: 31.8%;
-    padding: 10px;
-}
-
-.works p {
     text-align: center;
-    padding-bottom: 220px;
+    margin: 10px;
+    margin-top: 200px;
+}
+
+.works_content img {
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.more {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.more a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 150px;
+    padding: 10px 25px;
+    color: #a4a88d;
+    transition: 0.3s ease-in-out;
+}
+
+.more a ::before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+}
+
+.more a:before {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateX(-50%);
+}
+.more a:after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #c4a672;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+.more a:hover {
+    opacity: 0.7;
+}
+.more a:hover:after {
+    transform: scale(1, 1);
 }
 
 /* contact */
-.contact_text {
-    text-align: center;
-    padding: 30px 0;
+.contact_logo {
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    max-width: 142px;
 }
 
 .contact p {
     line-height: 1.68;
+    text-align: center;
+    padding-top: 176px;
 }
 
 .contact_buttan {
