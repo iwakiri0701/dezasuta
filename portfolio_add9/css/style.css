@@ -35,6 +35,16 @@ header {
     font-size: 12px;
 }
 
+@media screen and (max-width: 767px) {
+    p {
+        font-size: 12px;
+    }
+
+    .sd_appear {
+        width: 100%;
+    }
+}
+
 /* hp_desc */
 .hp_desc {
     max-width: 1000px;
@@ -54,6 +64,18 @@ header {
 .hp_desc_text p {
     padding: 10px 0;
     line-height: 1.68;
+}
+
+@media screen and (max-width: 767px) {
+    .hp_desc {
+        display: block;
+        margin: 550px 10px 200px 10px;
+        padding: 0;
+    }
+
+    .hp_desc_img {
+        text-align: center;
+    }
 }
 
 /* about */
@@ -86,10 +108,37 @@ header {
     line-height: 1.68;
 }
 
+@media screen and (max-width: 767px) {
+    .about_logo {
+        left: 38%;
+    }
+
+    .about_logo {
+        top: -45px;
+    }
+
+    .about_wrap {
+        display: block;
+    }
+
+    .about_img {
+        width: 100%;
+    }
+
+    .about_text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .about_wrap {
+        padding-bottom: 50px;
+    }
+}
+
 /* skill */
 .skill_logo {
     position: absolute;
-    top: -8px;
+    top: -27px;
     left: 50%;
     transform: translate(-50%);
     width: 30%;
@@ -97,14 +146,14 @@ header {
 }
 
 .skill_content {
-    padding: 100px;
+    padding: 20px;
 }
 
 .skill_box {
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .skill_box ul {
@@ -127,10 +176,26 @@ header {
     line-height: 1.68;
 }
 
+@media screen and (max-width: 767px) {
+    .skill_box ul {
+        display: block;
+        padding: 0;
+    }
+
+    br {
+        display: initial;
+    }
+
+    .skill_box p {
+        padding: 0;
+        margin-bottom: 90px;
+    }
+}
+
 /* works */
 .works_logo {
     position: absolute;
-    top: -8px;
+    top: -12px;
     left: 50%;
     transform: translate(-50%);
     width: 30%;
@@ -143,16 +208,62 @@ header {
 
 /* works横並び */
 .works_content {
-    text-align: center;
-    margin: 10px;
-    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
-.works_content img {
-    width: calc(100% / 4);
-    box-sizing: border-box;
-    margin-right: 5px;
-    margin-bottom: 10px;
+.works_content a {
+    display: block;
+    color: #a4a88d;
+    width: 100%;
+    height: 100%;
+}
+.works_content ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    list-style: none;
+}
+
+.works_wrap {
+    width: 280px;
+    height: 188px;
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative; /* 相対位置指定 */
+}
+
+.works_wrap .caption {
+    font-size: 40%;
+    padding-top: 25%;
+    text-align: center;
+    margin: 0 auto;
+    color: #a4a88d;
+}
+
+.works_wrap .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: #ffffeb; /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.works_wrap:hover .mask {
+    opacity: 0.95; /* マスクを表示する */
+}
+
+@media screen and (max-width: 767px) {
+    .works_content {
+        padding-top: 0;
+    }
 }
 
 .more {
@@ -215,7 +326,6 @@ header {
 /* contact */
 .contact_logo {
     position: absolute;
-    top: 19px;
     left: 50%;
     transform: translate(-50%);
     width: 30%;
@@ -240,4 +350,18 @@ header {
     padding: 10px 40px;
     background-color: #fffff5;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .contact_logo {
+        top: 5px;
+    }
+
+    .contact p {
+        padding-top: 0;
+    }
+
+    .contact_buttan {
+        padding-bottom: 160px;
+    }
 }

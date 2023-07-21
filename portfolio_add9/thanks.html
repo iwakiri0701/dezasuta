@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="thanks/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
 
@@ -27,21 +28,42 @@
             <div class="pc_nav">
                 <ul>
                     <li>
-                        <a href="about.index.html">ABOUT</a>
+                        <a href="../about.index.html">ABOUT</a>
                     </li>
                     <li>
-                        <a href="works.index.html">WORKS</a>
+                        <a href="../works.index.html">WORKS</a>
                     </li>
                     <li>
-                        <a href="contact.html">CONTACT</a>
+                        <a href="../contact.html">CONTACT</a>
                     </li>
                     <li>
-                        <a href="">
-                            <img src="images/instagram_icon.svg" alt="instagram_icon"></a>
+                        <a href="https://instagram.com/iwakiri_design?igshid=MjEwN2IyYWYwYw==">
+                            <img src="../images/instagram_icon.svg" alt="instagram_icon"></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <div class="header_sp">
+            <div class="header_sp_inner">
+                <h1 class="header_title header-title">
+                    <a href="index.html"><img src="images/add9_logo.svg" alt="add9_logo"></a>
+                </h1>
+
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href="./about/index.html">ABOUT</a></li>
+                        <li><a href="./works/index.html">WORKS</a></li>
+                        <li><a href="./contact/index.html">CONTACT</a></li>
+                        <li><a href="./https://instagram.com/iwakiri_design?igshid=MjEwN2IyYWYwYw==">
+                                <img src="../portfolio_add9/images/instagram_icon.svg" alt="instagram_icon"></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </header>
 
 
@@ -68,7 +90,6 @@
 
         <p>※ご返信まで数日頂戴する場合がございます。<br>
             ※内容によりましてはご返信いたしかねる場合がございます。<br>
-
             <span>あらかじめご了承ください。</span>
         </p>
 
@@ -94,6 +115,16 @@
 
 
     </footer>
+
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
+
 
 
 </body>

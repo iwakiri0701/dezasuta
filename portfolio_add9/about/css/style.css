@@ -2,10 +2,9 @@
 
 .aboutme_logo {
     position: absolute;
-    top: -29px;
+    top: -50px;
     left: 20%;
-    width: 30%;
-    max-width: 125px;
+    width: 125px;
 }
 
 .about_logo img {
@@ -26,7 +25,6 @@
 
 .aboutme_desc img {
     width: 420px;
-    padding-bottom: 30px;
 }
 
 .aboutme_text_wrap {
@@ -35,6 +33,7 @@
 
 h3 {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .aboutme_desc p {
@@ -64,7 +63,7 @@ h3 {
 
 .kigo2 {
     position: absolute;
-    top: 511px;
+    top: 533px;
     left: 503px;
 }
 
@@ -79,6 +78,71 @@ h3 {
 
 .scroll img {
     width: 1.5%;
+}
+
+.br-sp {
+    display: none;
+}
+
+.sp_scroll {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .score {
+        top: 100px;
+    }
+
+    .aboutme_wrap {
+        display: block;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .sp_scroll {
+        display: initial;
+        padding-left: 90%;
+    }
+
+    .sp_scroll img {
+        width: 10px;
+    }
+
+    .aboutme_desc {
+        margin: 10px;
+    }
+
+    .aboutme_text {
+        padding: 0;
+        margin: 50px;
+        font-size: 15px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .kigo1 img {
+        width: 15px;
+    }
+
+    .kigo1 {
+        top: 50%;
+        left: 3%;
+        right: 0;
+    }
+
+    .kigo2 img {
+        width: 15px;
+    }
+
+    .kigo2 {
+        top: 1022px;
+        left: 3%;
+        right: 0;
+    }
 }
 
 /* desc */
@@ -104,9 +168,22 @@ h3 {
     line-height: 1.68;
 }
 
-h4 {
-    text-align: center;
-    font-size: 30px;
+.aboutme_text span {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutme_hp_desc {
+        display: block;
+    }
+
+    .aboutme_hp_desc img {
+        margin-left: 35%;
+    }
+
+    .aboutme_hp_desc_text {
+        padding: 0 20px;
+    }
 }
 
 .aboutme_photo {
@@ -118,10 +195,56 @@ h4 {
     justify-content: space-between;
 }
 
-.aboutme_photo div {
-    padding-bottom: 20px;
+.about_photo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 200px;
 }
 
-.aboutme_photo img {
-    width: 300px;
+.about_photo_wrap a {
+    display: block;
+    color: #a4a88d;
+    width: 100%;
+    height: 100%;
+}
+
+.about_photo_wrap {
+    width: 280px;
+    height: 188px;
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative; /* 相対位置指定 */
+}
+
+.about_photo_wrap .caption {
+    font-size: 40%;
+    padding-top: 20%;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.about_photo_wrap .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: #5f5f52; /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.about_photo_wrap:hover .mask {
+    opacity: 0.9; /* マスクを表示する */
+}
+
+@media screen and (max-width: 767px) {
+    .aboutme_photo {
+        justify-content: center;
+    }
 }

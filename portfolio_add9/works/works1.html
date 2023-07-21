@@ -9,7 +9,8 @@
     <meta name="destination" content="ポートフォリオの作品実績です。">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../works/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
 
@@ -19,7 +20,7 @@
 
     <header id="header">
         <h1 class="header_logo" id="home">
-            <a href="/index.html">
+            <a href="../index.html">
                 <img src="../images/add9_logo.svg" alt="add9_logo">
             </a>
         </h1>
@@ -27,22 +28,44 @@
             <div class="pc_nav">
                 <ul>
                     <li>
-                        <a href="../about.index.html">ABOUT</a>
+                        <a href="../about/index.html">ABOUT</a>
                     </li>
                     <li>
-                        <a href="../works.index.html">WORKS</a>
+                        <a href="../works/index.html">WORKS</a>
                     </li>
                     <li>
-                        <a href="../contact.index.html">CONTACT</a>
+                        <a href="../contact/index.html">CONTACT</a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="https://instagram.com/iwakiri_design?igshid=MjEwN2IyYWYwYw==">
                             <img src="../images/instagram_icon.svg" alt="instagram_icon"></a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <div class="header_sp">
+            <div class="header_sp_inner">
+                <h1 class="header_title header-title">
+                    <a href="index.html"><img src="../images/add9_logo.svg" alt="add9_logo"></a>
+                </h1>
+
+                <div class="sp_btn"><span></span></div>
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href="../about/index.html">ABOUT</a></li>
+                        <li><a href="../works/index.html">WORKS</a></li>
+                        <li><a href="../contact/index.html">CONTACT</a></li>
+                        <li><a href="https://instagram.com/iwakiri_design?igshid=MjEwN2IyYWYwYw==">
+                                <img src="../images/instagram_icon.svg" alt="instagram_icon"></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
     </header>
+
 
     <div class="works_item" id="works_item">
         <div class="score line">
@@ -57,59 +80,65 @@
         </div>
 
         <div class="worksitem_content">
-            <img src="../works/images/works1_hamburger@2x-100.jpg" alt="hamburger_mv">
-        </div>
-
-        <div class="worksitem_content_desc">
-            <h3>WEBデザイン広告用デザイン「激旨バーガー」<span>（架空）</span></h3>
-            <p>Illustrator/Photoshop</p>
-            <p>デザイン、素材加工</p>
-        </div>
-
-
-        <div class="worksitem_text">
-            <div class="worksite_desc">
-                <h4>課題とコンセプト</h4>
-                <p><span>新商品の告知のためのバナー。<br>
-                        高級バージョンとPOPバージョンでどちらの反応が良いかInstagramとTwitterを使用し検証。<br>
-                        サイト誘導と来店促進を促したい。</span>
-                </p>
-
-                <div class="kigo1">
-                    <img src="../images/kigo@2x.png" alt="kigo">
-                </div>
+            <div class="detail_img">
+                <img src="../works/images/works1_hamburger@2x-100.jpg" alt="hamburger_mv">
 
             </div>
+            <div class="worksitem_content_desc">
+                <h3>WEBデザイン広告用デザイン<br class="br-sp">「激旨バーガー」<span>（架空）</span></h3>
+                <p>Illustrator/Photoshop</p>
+                <p>デザイン、素材加工</p>
+            </div>
 
-            <div class="worksite_desc">
-                <h4>制作ポイント</h4>
-                <p><span>新商品が注目されるようにセンターに大きく配置。<br>
-                        高級バージョンは肉汁をイメージした赤色を背景にし、グラデーションで深みを演出。<br>
-                        POPバージョンはハンバーガーをイメージした背景デザインにし、全体的に丸みを帯びたロゴや線を使用し、<br>
-                        柔らかい印象に。</span>
-                </p>
 
-                <div class="kigo2">
+            <div class="worksitem_text">
+
+
+                <div class="worksite_desc">
                     <img src="../images/kigo@2x.png" alt="kigo">
+                    <div class="worksite_desc_text">
+                        <h4>課題とコンセプト</h4>
+                        <p><span>新商品の告知のためのバナー。<br>
+                                高級バージョンとPOPバージョンでどちらの反応が良いかInstagramとTwitterを使用し検証。<br>
+                                サイト誘導と来店促進を促したい。</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="worksite_desc">
+                    <img src="../images/kigo@2x.png" alt="kigo">
+                    <div class="worksite_desc_text">
+                        <h4>制作ポイント</h4>
+                        <p><span>新商品が注目されるようにセンターに大きく配置。<br>
+                                高級バージョンは肉汁をイメージした赤色を背景にし、グラデーションで深みを演出。<br>
+                                POPバージョンはハンバーガーをイメージした背景デザインにし、全体的に丸みを帯びたロゴや線を使用し、
+                                柔らかい印象に。</span>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="works_design1">
-                    <img class="detail1_img" src="../works/images/luxury@2x-100.jpg" alt="高級">
-                    <img class="detail2_img" src="../works/images/pop@2x-100.jpg" alt="POP">
-                </div>
+
 
             </div>
 
 
+
+            <div class="works_design1">
+                <img class="detail1_img" src="../works/images/luxury@2x-100.jpg" alt="高級">
+                <img class="detail2_img" src="../works/images/pop@2x-100.jpg" alt="POP">
+            </div>
+
         </div>
+
+
+
+
+
+
+        <div class="more"><a href="../works/index.html">VIEW ALL WORKS</a></div>
+
+
 
     </div>
-
-    <div class="more"><a href="../works.index.html">VIEW ALL WORKS</a></div>
-
-
-
-
 
 
 
@@ -125,11 +154,20 @@
         </div>
 
         <div class="page_top">
-            <a href="#header"><img src="../images/top_btn@2x.png" alt="topボタン">
+            <a href="#home"><img src="../images/top_btn@2x.png" alt="topボタン">
             </a>
         </div>
 
     </footer>
+    <script>
+        $(function () {
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
+
 
 
 </body>

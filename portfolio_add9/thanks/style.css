@@ -3,11 +3,10 @@
 /* contact */
 .contact3_logo {
     position: absolute;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%);
-    width: 30%;
-    max-width: 142px;
+    width: 142px;
 }
 
 .thanks_text {
@@ -20,7 +19,8 @@
 .thanks_text p {
     line-height: 1.78;
     text-align: left;
-    margin-left: 310px;
+    display: inline-block;
+    margin-left: 80px;
     margin-top: 50px;
 }
 
@@ -43,4 +43,15 @@
     padding: 10px 40px;
     background-color: #c4a672;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .thanks_text p {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .thanks_text img {
+        width: 350px;
+    }
 }
