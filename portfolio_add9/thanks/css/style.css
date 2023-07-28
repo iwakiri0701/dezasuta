@@ -13,7 +13,7 @@
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    padding: 200px 0;
+    padding: 200px 10px;
 }
 
 .thanks_text p {
@@ -34,7 +34,7 @@
 
 .topback_btn {
     text-align: center;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .topback_btn a {
@@ -46,12 +46,16 @@
 }
 
 @media screen and (max-width: 767px) {
+    .thanks_text {
+        padding: 120px 10px;
+    }
+
     .thanks_text p {
         font-size: 12px;
         margin-left: 20px;
     }
 
     .thanks_text img {
-        width: 350px;
+        width: 400px;
     }
 }

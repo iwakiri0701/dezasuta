@@ -19,6 +19,7 @@
 
 .contact_text {
     line-height: 1.78;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
@@ -28,7 +29,7 @@
     text-align: left;
     display: inline-block;
     margin: 0;
-    padding-right: 110px;
+    padding-right: 10%;
 }
 
 .contact_img {
@@ -66,7 +67,7 @@ input {
 
 .form_text img {
     width: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
 }
 
 .contact_btn {
@@ -86,23 +87,34 @@ textarea {
     background: #d1d6b3;
 }
 
-@media screen and (max-width: 767px) {
-    .score {
-        top: 120px;
-    }
-    .form_wrap p {
-        padding: 10px;
-        font-size: 12px;
+@media screen and (max-width: 900px) {
+    .contact_text2 {
+        padding-right: 3%;
     }
 
-    input {
-        width: 70%;
-    }
-    label {
-        padding-left: 10%;
-    }
+    @media screen and (max-width: 767px) {
+        .score {
+            top: 120px;
+        }
 
-    textarea {
-        width: 70%;
+        .form_wrap {
+            padding-bottom: 150px;
+        }
+
+        .form_wrap p {
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        input {
+            width: 70%;
+        }
+        label {
+            padding-left: 10%;
+        }
+
+        textarea {
+            width: 70%;
+        }
     }
 }

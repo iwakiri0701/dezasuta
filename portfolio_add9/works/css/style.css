@@ -32,6 +32,10 @@ h3 {
     width: 100%;
     height: 100%;
 }
+
+.works_content a:hover {
+    opacity: 1;
+}
 .works_content ul {
     display: flex;
     flex-wrap: wrap;
@@ -61,12 +65,12 @@ h3 {
     top: 0;
     left: 0;
     opacity: 0; /* マスクを表示しない */
-    background-color: #ffffeb; /* マスクは半透明 */
-    -webkit-transition: all 0.2s ease;
+    background-color: rgba(255, 255, 235, 0.95); /* マスクは半透明 */
+
     transition: all 0.2s ease;
 }
 .works_wrap:hover .mask {
-    opacity: 0.95; /* マスクを表示する */
+    opacity: 1; /* マスクを表示する */
 }
 
 @media screen and (max-width: 767px) {
@@ -162,6 +166,15 @@ h3 {
 
 /* worksitem_content */
 
+.website_design img {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    max-width: 265px;
+}
+
 .worksitem_content {
     max-width: 1000px;
     margin: 0 auto;
@@ -198,11 +211,15 @@ h3 span {
 
 .worksite_desc {
     display: flex;
+    align-items: center;
+}
+
+.worksite_desc + .worksite_desc {
+    margin-top: 100px;
 }
 
 .worksite_desc p {
     line-height: 1.78;
-    margin-bottom: 100px;
 }
 
 .worksite_desc p span {
@@ -239,12 +256,12 @@ h3 span {
     }
 
     .detail1_img {
-        width: 100%;
+        width: 80%;
         padding: 0;
     }
 
     .detail2_img {
-        width: 100%;
+        width: 95%;
         padding: 0;
     }
 
@@ -331,55 +348,70 @@ h3 span {
     transform: scale(1, 1);
 }
 
-/* works2について */
-.kigo3 {
-    position: absolute;
-    top: -12px;
-    left: -40px;
+/* works2 */
+.url {
+    max-width: 850px;
+    text-align: end;
+    margin-top: 5%;
 }
 
-.kigo3 img {
-    width: 10px;
+.url::before {
+    content: url(../images/sannkaku@2x.png);
 }
 
-.kigo4 {
-    position: absolute;
-    top: -21px;
-    left: -40px;
+@media screen and (max-width: 1100px) {
+    .url {
+        text-align: center;
+        max-width: none;
+    }
 }
 
-.kigo4 img {
-    width: 10px;
+/* works2.6 */
+.sp-br {
+    display: none;
 }
 
+@media screen and (max-width: 767px) {
+    .sp-br {
+        display: block;
+    }
+}
+
+/* works5.6 */
 .works_website {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    padding-bottom: 130px;
+    justify-content: space-around;
+    margin: 10px;
 }
 
 .pc_img {
-    width: 443px;
-    margin-right: 120px;
+    width: 600px;
 }
 
 .sp_img {
     width: 200px;
 }
 
-.works_website_pc {
-    text-align: center;
+.works_website p {
+    text-align: left;
+    margin-left: 10px;
 }
 
-.works_website_pc img {
-    margin: 0 auto;
-}
+@media screen and (max-width: 767px) {
+    .works_website {
+        display: block;
+    }
 
-/* works5.6 */
-.websitep {
-    margin: 0 auto;
-    text-align: center;
+    .pc_detail {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .sp_detail {
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }
 
 /* works7 */

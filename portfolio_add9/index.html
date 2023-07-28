@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBデザイナー portfolio_add9</title>
+    <title>portfolio_add9|HOME</title>
     <meta name="destination" content="ポートフォリオサイトです。">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-256x256.png">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
@@ -14,10 +17,13 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div id="loading_logo"><img src="images/loading_icon@2x.png" alt="メトロノーム" class="loading_icon"></div>
+        <div id="hari"><img src="images/hari@2x.png" alt="針"></div>
+    </div>
+
 
     <header>
-
-
 
         <div class="header_wrap"> </div>
         <h1 class="header_logo" id="home">
@@ -50,9 +56,13 @@
                         <li><a href="about/index.html">ABOUT</a></li>
                         <li><a href="works/index.html">WORKS</a></li>
                         <li><a href="contact/index.html">CONTACT</a></li>
-                        <li><a href="https://instagram.com/iwakiri_design?igshid=MjEwN2IyYWYwYw==">
-                                <img src="images/instagram_icon.svg" alt="instagram_icon"></a></li>
+                        <li><img src="images/instagram_icon.svg" alt="instagram_icon"></li>
+
+
                     </ul>
+
+
+
                 </nav>
             </div>
 
@@ -87,23 +97,18 @@
     </div>
 
 
-    <div class="hp_desc" id="hp_desc">
-        <div class="hp_desc">
-            <div class="hp_desc_img"><img src="images/add9_logo.svg" alt="add9_logo"></div>
-            <div class="hp_desc_text">
-                <p>
-                    add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
-                    そしてaddには「加える」という意味があります。
-                </p>
-                <p>
-                    お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしいという願いを込めてadd9と名付けました。
-                </p>
-                <p>
-                    add9の”d”は音符、”9”はヘ音記号をモチーフにしています。
-                </p>
-            </div>
-        </div>
+    <div class="hp_desc">
+        <img src="images/add9_logo.svg" alt="add9_logo">
+        <p>
+            add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
+            そしてaddには「加える」という意味があります。<br>
+            お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしい<br class="br-pc">という願いを込めてadd9と名付けました。<br>
+            add9の”d”は音符、”9”はヘ音記号をモチーフにしています。
+        </p>
+
     </div>
+
+
 
     <div class="about" id="about">
         <div class="score line">
@@ -134,8 +139,11 @@
 
 
             </div>
+
         </div>
+
     </div>
+
 
     <div class="skill" id="skill">
         <div class="score line">
@@ -207,7 +215,7 @@
             <a href="works/works1.html"><img src="images/hamburger@2x-100.jpg" alt="ハンバーガー写真">
                 <div class="mask">
                     <div class="caption">
-                        <h3>WEBデザイン広告用デザイン「激旨バーガー」<span>(架空)</span></h3>
+                        <h3>WEBデザイン広告用デザイン<br>「激旨バーガー」<span>(架空)</span></h3>
                         <p>Illustrator/Photoshop</p>
                         <p>デザイン、素材加工</p>
                     </div>
@@ -266,24 +274,24 @@
         </div>
 
         <div class="works_wrap">
-            <a href="works/works6.html"><img src="images/works@2x-100.jpg" alt="works写真">
-                <div class="mask">
-                    <div class="caption">
-                        <h3>WEBサイト「会員制コワーキングスペース WORKERS」<span>(架空)</span></h3>
-                        <p>Illustrator</p>
-                        <p>デザイン</p>
-                    </div>
+            <a href="works/works6.html"><img src="images/works@2x-100.jpg" alt="works写真"> </a>
+            <div class="mask">
+                <div class="caption">
+                    <h3>WEBサイト<br>「会員制コワーキングスペース WORKERS」<span>(架空)</span></h3>
+                    <p>Illustrator</p>
+                    <p>デザイン</p>
                 </div>
-            </a>
+            </div>
+
         </div>
+
     </div>
 
+    <div class="more"><a href="works/index.html">VIEW MORE</a></div>
 
 
 
-    <div class="more">
-        <a href="works/index.html">VIEW MORE</a>
-    </div>
+
 
     <div class="contact" id="contact">
         <div class="score line">
@@ -304,7 +312,7 @@
 
 
         <div class="contact_buttan">
-            <a href="" class="contact_btn">お問い合わせ</a>
+            <a href="contact/index.html" class="contact_btn">お問い合わせ</a>
         </div>
 
     </div>
@@ -330,6 +338,8 @@
 
     </footer>
 
+
+
     <script>
         $(function () {
             $('.sp_btn, .sp_nav li').on('click', function () {
@@ -338,6 +348,12 @@
             });
         });
     </script>
+
+
+
+
+
+
 
 </body>
 

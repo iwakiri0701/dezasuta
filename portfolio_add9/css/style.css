@@ -19,6 +19,12 @@ header {
     width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .sd_appear {
+        width: 100%;
+    }
+}
+
 .scroll {
     display: flex;
     justify-content: center;
@@ -37,7 +43,7 @@ header {
 
 @media screen and (max-width: 767px) {
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .sd_appear {
@@ -47,34 +53,40 @@ header {
 
 /* hp_desc */
 .hp_desc {
-    max-width: 1000px;
+    max-width: 850px;
     display: flex;
     margin: 0 auto;
-    padding: 100px 20px 80px 65px;
+    padding: 10%;
+    justify-content: center;
+}
+
+.hp_desc {
+    display: flex;
+}
+
+.hp_desc p {
+    text-align: left;
+    font-size: 17px;
 }
 
 .hp_desc img {
-    width: 116px;
-}
-
-.hp_desc_text {
-    padding: 0 70px;
-}
-
-.hp_desc_text p {
-    padding: 10px 0;
-    line-height: 1.68;
+    width: 170px;
+    padding-right: 50px;
 }
 
 @media screen and (max-width: 767px) {
+    .scroll {
+        padding-top: 160%;
+    }
     .hp_desc {
         display: block;
-        margin: 550px 10px 200px 10px;
-        padding: 0;
+        margin: 70px 10px 200px 10px;
+        text-align: center;
     }
 
-    .hp_desc_img {
+    .hp_desc img {
         text-align: center;
+        padding-right: 0;
     }
 }
 
@@ -82,8 +94,8 @@ header {
 
 .about_logo {
     position: absolute;
-    top: -29px;
-    left: 53%;
+    top: -50px;
+    left: 55%;
     width: 30%;
     max-width: 125px;
 }
@@ -101,11 +113,38 @@ header {
 }
 
 .about_text {
-    padding: 175px 75px 0;
+    padding: 10% 9% 9% 9%;
 }
 
 .about_text p {
     line-height: 1.68;
+}
+
+.about_more {
+    position: relative;
+    margin-top: 5%;
+    text-align: center;
+}
+.about_more::before,
+.about_more::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #c4a672;
+    transition: width 0.3s;
+}
+.about_more::before {
+    right: 50%;
+}
+.about_more::after {
+    left: 50%;
+}
+.about_more:hover::before,
+.about_more:hover::after {
+    width: 20%;
 }
 
 @media screen and (max-width: 767px) {
@@ -127,7 +166,12 @@ header {
 
     .about_text {
         text-align: center;
-        padding: 20px;
+        padding: 15%;
+    }
+
+    .about_text p {
+        text-align: left;
+        display: inline-block;
     }
 
     .about_wrap {
@@ -139,7 +183,7 @@ header {
 .skill_logo {
     position: absolute;
     top: -27px;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%);
     width: 30%;
     max-width: 114px;
@@ -153,12 +197,14 @@ header {
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
-    padding: 100px 0;
 }
 
 .skill_box ul {
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
 .skill_box ul li {
@@ -170,10 +216,15 @@ header {
     padding: 20px 0;
 }
 
-.skill_box p {
+.skill_box li p {
     text-align: center;
-    padding: 50px 0;
+
     line-height: 1.68;
+    font-family: "garamond-premier-pro-caption", serif;
+}
+
+.br-sp {
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -186,6 +237,10 @@ header {
         display: initial;
     }
 
+    .br-sp {
+        display: block;
+    }
+
     .skill_box p {
         padding: 0;
         margin-bottom: 90px;
@@ -193,6 +248,7 @@ header {
 }
 
 /* works */
+
 .works_logo {
     position: absolute;
     top: -12px;
@@ -213,7 +269,7 @@ header {
     max-width: 1000px;
     justify-content: space-around;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .works_content a {
@@ -222,6 +278,11 @@ header {
     width: 100%;
     height: 100%;
 }
+
+.works_content a:hover {
+    opacity: 1;
+}
+
 .works_content ul {
     display: flex;
     flex-wrap: wrap;
@@ -230,16 +291,15 @@ header {
 }
 
 .works_wrap {
-    width: 280px;
-    height: 188px;
+    width: 30%;
     overflow: hidden;
     margin: 10px 8px 10px 16px;
     position: relative; /* 相対位置指定 */
 }
 
 .works_wrap .caption {
-    font-size: 40%;
-    padding-top: 25%;
+    font-size: 60%;
+    padding-top: 15%;
     text-align: center;
     margin: 0 auto;
     color: #a4a88d;
@@ -252,80 +312,71 @@ header {
     top: 0;
     left: 0;
     opacity: 0; /* マスクを表示しない */
-    background-color: #ffffeb; /* マスクは半透明 */
-    -webkit-transition: all 0.2s ease;
+    background-color: rgba(255, 255, 235, 0.95); /* マスクは半透明 */
     transition: all 0.2s ease;
 }
 .works_wrap:hover .mask {
-    opacity: 0.95; /* マスクを表示する */
+    opacity: 1; /* マスクを表示する */
 }
 
 @media screen and (max-width: 767px) {
     .works_content {
         padding-top: 0;
+        margin-bottom: 20%;
+        max-width: 100%;
+    }
+
+    .works_wrap {
+        width: 100%;
+    }
+
+    .works_wrap .caption {
+        width: 100%;
+    }
+
+    .works_content {
+        display: block;
     }
 }
 
 .more {
-    text-align: center;
-    margin: 80px 0;
-}
-
-.more a {
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 150px;
-    padding: 10px 25px;
-    color: #a4a88d;
-    transition: 0.3s ease-in-out;
+    margin-top: 50px;
+    text-align: center;
+}
+.more::before,
+.more::after {
+    right: 50%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #c4a672;
+    transform: translateX(-50%);
+    animation: border_anim 3s linear forwards;
+}
+.more::before {
+    right: 50%;
+}
+.more::after {
+    left: 50%;
+}
+.more:hover::before,
+.more:hover::after {
+    width: 50%;
 }
 
-.more a ::before {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.1);
-    transform: translateX(-50%);
-}
-
-.more a:before {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: rgba(0, 0, 0, 0.1);
-    transform: translateX(-50%);
-}
-.more a:after {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background: #c4a672;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform 0.3s;
-}
-.more a:hover {
-    opacity: 0.7;
-}
-.more a:hover:after {
-    transform: scale(1, 1);
+@media screen and (max-width: 767px) {
+    .more {
+        margin-bottom: 100px;
+    }
 }
 
 /* contact */
 .contact_logo {
     position: absolute;
+    top: 1%;
     left: 50%;
     transform: translate(-50%);
     width: 30%;
@@ -335,7 +386,7 @@ header {
 .contact p {
     line-height: 1.68;
     text-align: center;
-    padding-top: 176px;
+    padding-top: 170px;
 }
 
 .contact_buttan {
@@ -353,12 +404,11 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+    .contact p {
+        padding-top: 30px;
+    }
     .contact_logo {
         top: 5px;
-    }
-
-    .contact p {
-        padding-top: 0;
     }
 
     .contact_buttan {
