@@ -25,7 +25,7 @@
 
     <header>
 
-        <div class="header_wrap"> </div>
+        <div class="header_wrap"></div>
         <h1 class="header_logo" id="home">
             <a href="index.html"><img src="images/add9_logo.svg" alt="add9_logo"></a>
         </h1>
@@ -69,6 +69,7 @@
         </div>
 
 
+
     </header>
 
 
@@ -96,17 +97,21 @@
         <p>scroll</p>
     </div>
 
+    <div class="fade">
+        <div class="hp_desc">
+            <img src="images/add9_logo.svg" alt="add9_logo">
 
-    <div class="hp_desc">
-        <img src="images/add9_logo.svg" alt="add9_logo">
-        <p>
-            add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
-            そしてaddには「加える」という意味があります。<br>
-            お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしい<br class="br-pc">という願いを込めてadd9と名付けました。<br>
-            add9の”d”は音符、”9”はヘ音記号をモチーフにしています。
-        </p>
+            <p>
+                add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
+                そしてaddには「加える」という意味があります。<br>
+                お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしい<br class="br-pc">という願いを込めてadd9と名付けました。<br>
+                add9の”d”は音符、”9”はヘ音記号をモチーフにしています。
+            </p>
 
+        </div>
     </div>
+
+
 
 
 
@@ -128,18 +133,21 @@
             <div class="about_img">
                 <img src="images/top_about@2x-100.jpg" alt="aboutphoto">
             </div>
-            <div class="about_text">
-                <p>
-                    お客様とのコミュニケーションを通して、<br>
-                    寄り添うデザインを制作。<br>
-                    イベントディレクターの経験を活かした<br>
-                    ワクワクさせる仕掛けも大切に。
-                </p>
-                <div class="more"><a href="about/index.html">VIEW MORE</a></div>
 
+            <div class="about_text">
+                <div class="fade">
+                    <p>
+                        お客様とのコミュニケーションを通して、<br>
+                        寄り添うデザインを制作。<br>
+                        イベントディレクターの経験を活かした<br>
+                        ワクワクさせる仕掛けも大切に。
+                    </p>
+                    <div class="more"><a href="about/index.html">VIEW MORE</a></div>
+
+
+                </div>
 
             </div>
-
         </div>
 
     </div>
@@ -160,26 +168,28 @@
 
         <div class="skill_content">
             <div class="skill_box">
+                <div class="fade">
+                    <ul>
+                        <li>
+                            <h3>Design</h3>
+                            <img src="images/design_icon.svg" alt="design_icon">
+                            <p>Illustrator/Photoshop</p>
+                        </li>
 
-                <ul>
-                    <li>
-                        <h3>Design</h3>
-                        <img src="images/design_icon.svg" alt="design_icon">
-                        <p>Illustrator/Photoshop</p>
-                    </li>
+                        <li>
+                            <h3>Coding</h3>
+                            <img src="images/coding_icon.svg" alt="coding_icon">
+                            <p>HTML/CSS/JavaScript</p>
+                        </li>
 
-                    <li>
-                        <h3>Coding</h3>
-                        <img src="images/coding_icon.svg" alt="coding_icon">
-                        <p>HTML/CSS/JavaScript</p>
-                    </li>
+                        <li>
+                            <h3>Video creation</h3>
+                            <img src="images/viedo_icon.svg" alt="video_icon">
+                            <p>Premiere Pro/After Effects</p>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li>
-                        <h3>Video creation</h3>
-                        <img src="images/viedo_icon.svg" alt="video_icon">
-                        <p>Premiere Pro/After Effects</p>
-                    </li>
-                </ul>
 
 
 
@@ -347,6 +357,23 @@
                 $('.sp_btn').toggleClass('open');
             });
         });
+    </script>
+
+
+    <script>
+        const targets = document.getElementsByClassName('fade');
+        for (let i = targets.length; i--;) {
+            let observer = new IntersectionObserver((entries, observer) => {
+                for (let j = entries.length; j--;) {
+                    if (entries[j].isIntersecting) {
+                        entries[j].target.classList.add('active');
+                    } else {
+                        entries[j].target.classList.remove('active');
+                    }
+                }
+            });
+            observer.observe(targets[i]);
+        }
     </script>
 
 

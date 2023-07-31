@@ -165,7 +165,7 @@ h3 {
 .aboutme_hp_desc {
     margin: 100px auto;
     justify-content: center;
-    padding: 150px 0;
+    padding: 150px 50px;
     display: flex;
     background-image: url(../images/about_bg@2x.png);
 }
@@ -186,17 +186,12 @@ h3 {
 @media screen and (max-width: 767px) {
     .aboutme_hp_desc {
         display: block;
-    }
-
-    .aboutme_hp_desc img {
-        margin-left: 45%;
+        text-align: center;
     }
 
     .aboutme_hp_desc_text {
         padding: 0 20px;
-    }
-    .aboutme_hp_desc img {
-        margin-left: 35%;
+        text-align: left;
     }
 }
 

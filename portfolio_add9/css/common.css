@@ -338,11 +338,22 @@ nav {
     }
 }
 
+/* fade */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s, transform 3s;
+}
+.fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 /* 五線譜 */
 .score {
     position: relative;
     top: 125px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .score span {

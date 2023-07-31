@@ -43,6 +43,13 @@
     padding: 10px 40px;
     background-color: #c4a672;
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.topback_btn a:hover {
+    color: #c4a672;
+    background: #fffff5;
+    opacity: 1;
 }
 
 @media screen and (max-width: 767px) {

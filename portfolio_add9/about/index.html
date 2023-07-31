@@ -119,6 +119,7 @@
                 </div>
 
 
+
                 <div class="aboutme_desc2">
 
                     <img src="../images/kigo@2x.png" alt="kigo">
@@ -148,27 +149,28 @@
             <img src="../images/d.s_icon.svg" alt="ダルセーニョ">
         </div>
 
+        <div class="fade">
+            <div class="aboutme_hp_desc">
+                <img src="../images/add9_logo.svg" alt="add9_logo">
 
-        <div class="aboutme_hp_desc">
-            <img src="../images/add9_logo.svg" alt="add9_logo">
-
-            <div class="aboutme_hp_desc_text">
-                <p>
-                    私の人生において音楽がとても大きな存在となっています。<br>
-                    そんな音楽にまつわるサイト名にしたいと思いました。
-                </p>
-                <p>
-                    add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
-                    そしてaddには「加える」という意味があります。
-                </p>
-                <p>
-                    お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしいという<br>
-                    願いを込めてadd9と名付けました。
-                </p>
-                <p>
-                    add9の”d"は音符、”９”は長年演奏してきたEuphoniumという楽器の音域記号より<br>
-                    ヘ音記号をモチーフにしています。
-                </p>
+                <div class="aboutme_hp_desc_text">
+                    <p>
+                        私の人生において音楽がとても大きな存在となっています。<br>
+                        そんな音楽にまつわるサイト名にしたいと思いました。
+                    </p>
+                    <p>
+                        add9コードはバラードからポップスまで幅広い曲で使用されるコードの一つです。<br>
+                        そしてaddには「加える」という意味があります。
+                    </p>
+                    <p>
+                        お客様の思いに私のデザインを加えてできるデザインが多くの方に愛されてほしいという<br>
+                        願いを込めてadd9と名付けました。
+                    </p>
+                    <p>
+                        add9の”d"は音符、”９”は長年演奏してきたEuphoniumという楽器の音域記号より<br>
+                        ヘ音記号をモチーフにしています。
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -290,6 +292,22 @@
                 $('.sp_btn').toggleClass('open');
             });
         });
+    </script>
+
+    <script>
+        const targets = document.getElementsByClassName('fade');
+        for (let i = targets.length; i--;) {
+            let observer = new IntersectionObserver((entries, observer) => {
+                for (let j = entries.length; j--;) {
+                    if (entries[j].isIntersecting) {
+                        entries[j].target.classList.add('active');
+                    } else {
+                        entries[j].target.classList.remove('active');
+                    }
+                }
+            });
+            observer.observe(targets[i]);
+        }
     </script>
 
 
